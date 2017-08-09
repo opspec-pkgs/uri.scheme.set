@@ -1,0 +1,26 @@
+name: uri.scheme.set
+description: sets the scheme of a URI
+inputs:
+  uri:
+    string:
+      constraints: { format: uri, minLength: 1 }
+      description: the initial URI
+  scheme:
+    string:
+      description: the scheme to set
+outputs:
+  uri:
+    string:
+      constraints: { format: uri, minLength: 1 }
+      description: the resulting URI
+version: 1.0.0
+run:
+  container:
+    image: { ref: 'node:8.1.0-alpine' }
+    cmd: [node, /index.js]
+    files: { /index.js }
+    stdOut:
+      uri=: uri
+    envVars:
+      uri:
+      scheme:
