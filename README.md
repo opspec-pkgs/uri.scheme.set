@@ -28,9 +28,9 @@ op:
   pkg: { ref: github.com/opspec-pkgs/uri.scheme.set#VERSION }
   inputs: 
     uri:
+    scheme:
   outputs:
     uri:
-    scheme:
 ```
 
 # Support
