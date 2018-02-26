@@ -13,14 +13,14 @@ outputs:
     string:
       constraints: { format: uri, minLength: 1 }
       description: the resulting URI
-version: 1.0.0
+version: 1.0.1
 run:
   container:
-    image: { ref: 'node:8.1.0-alpine' }
-    cmd: [node, /index.js]
-    files: { /index.js }
-    stdOut:
-      uri=: uri
+    image: { ref: 'node:9.5.0-alpine' }
+    cmd: [node, /cmd.js]
+    files:
+      /cmd.js:
+      /uri: $(uri)
     envVars:
       uri:
       scheme:
