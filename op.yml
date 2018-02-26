@@ -1,4 +1,4 @@
-name: uri.scheme.set
+name: github.com/opspec-pkgs/uri.scheme.set
 description: sets the scheme of a URI
 inputs:
   uri:

@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org.set.svg?branch=master)](https://travis-ci.org.set)
+[![Build Status](https://travis-ci.org/opspec-pkgs/uri.scheme.set.svg?branch=master)](https://travis-ci.org/opspec-pkgs/uri.scheme.set)
 
 
 # Problem statement
@@ -14,20 +14,20 @@ this version of the pkg is in [![opspec 0.1.5](https://img.shields.io/badge/opsp
 ## Install
 
 ```shell
-opctl pkg install uri.scheme.set#1.0.1
+opctl pkg install github.com/opspec-pkgs/uri.scheme.set#1.0.1
 ```
 
 ## Run
 
 ```
-opctl run uri.scheme.set#1.0.1
+opctl run github.com/opspec-pkgs/uri.scheme.set#1.0.1
 ```
 
 ## Compose
 
 ```yaml
 op:
-pkg: { ref: uri.scheme.set#1.0.1 }
+pkg: { ref: github.com/opspec-pkgs/uri.scheme.set#1.0.1 }
 inputs:
     scheme:
     uri:
@@ -40,7 +40,7 @@ outputs:
 join us on
 [![Slack](https://opspec-slackin.herokuapp.com/badge.svg)](https://opspec-slackin.herokuapp.com/)
 or
-[open an issue](https://uri.scheme.set/issues)
+[open an issue](https://github.com/opspec-pkgs/uri.scheme.set/issues)
 
 # Releases
 
