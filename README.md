@@ -1,6 +1,5 @@
 [![Build Status](https://travis-ci.org/opspec-pkgs/uri.scheme.set.svg?branch=master)](https://travis-ci.org/opspec-pkgs/uri.scheme.set)
 
-
 # Problem statement
 
 sets the scheme of a URI
@@ -27,11 +26,11 @@ opctl run github.com/opspec-pkgs/uri.scheme.set#1.0.1
 
 ```yaml
 op:
-pkg: { ref: github.com/opspec-pkgs/uri.scheme.set#1.0.1 }
-inputs:
-    scheme:
+  pkg: { ref: github.com/opspec-pkgs/uri.scheme.set#1.0.1 }
+  inputs:
     uri:
-outputs:
+    scheme:
+  outputs:
     uri:
 ```
 
