@@ -13,7 +13,7 @@ outputs:
     string:
       constraints: { format: uri, minLength: 1 }
       description: the resulting URI
-version: 1.0.1
+version: 1.1.0
 run:
   container:
     image: { ref: 'node:9.5.0-alpine' }
